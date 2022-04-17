@@ -6,6 +6,6 @@ import android.os.Bundle
 class tela2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tela2)
+        setContentView(R.layout.activity_soma)
     }
 }
