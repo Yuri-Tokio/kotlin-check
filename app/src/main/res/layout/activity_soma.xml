@@ -6,4 +6,93 @@
     android:layout_height="match_parent"
     tools:context=".tela2">
 
+
+    <TextView
+        android:id="@+id/labelIndicacao"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Digite os números a serem somados:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/btSomar"
+        app:layout_constraintStart_toStartOf="@id/primeiroSomado"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/primeiroSomado"
+        android:layout_width="127dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#4535"
+        android:hint="n1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toStartOf="@id/segundoSomado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelIndicacao" />
+
+    <TextView
+        android:id="@+id/sinalSoma"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:text="+"
+        android:layout_marginBottom="7dp"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toStartOf="@id/segundoSomado"
+        app:layout_constraintStart_toEndOf="@id/primeiroSomado"
+        app:layout_constraintTop_toTopOf="@id/segundoSomado"
+        app:layout_constraintBottom_toBottomOf="@id/segundoSomado"
+        />
+
+    <EditText
+        android:id="@+id/segundoSomado"
+        android:layout_width="127dp"
+        android:layout_height="60dp"
+        android:background="#4535"
+        android:hint="n2"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:layout_constraintStart_toEndOf="@id/primeiroSomado"
+        app:layout_constraintEnd_toEndOf="@id/btSomar"
+        app:layout_constraintTop_toTopOf="@id/primeiroSomado" />
+
+    <Button
+        android:id="@+id/btSomar"
+        android:backgroundTint="#FF5722"
+        android:text="="
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toEndOf="@id/segundoSomado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/primeiroSomado"
+        />
+
+    <TextView
+        android:id="@+id/resultadoSoma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#44190F19"
+        android:textColor="@color/black"
+        android:text="n1 + n2 = n3"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@id/btSomar"
+        app:layout_constraintStart_toStartOf="@id/primeiroSomado"
+        app:layout_constraintTop_toBottomOf="@id/segundoSomado"
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

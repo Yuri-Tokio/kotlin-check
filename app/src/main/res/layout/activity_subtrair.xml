@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".tela3">
+
+
+    <TextView
+        android:id="@+id/labelIndicacao"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Digite os números a serem subtraídos:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/btSubtrair"
+        app:layout_constraintStart_toStartOf="@id/primeiroSubtraido"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/primeiroSubtraido"
+        android:layout_width="127dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#4535"
+        android:hint="n1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toStartOf="@id/segundoSubtraido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelIndicacao" />
+
+    <TextView
+        android:id="@+id/sinalSubtracao"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:text="-"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textSize="43sp"
+        app:layout_constraintEnd_toStartOf="@id/segundoSubtraido"
+        app:layout_constraintStart_toEndOf="@id/primeiroSubtraido"
+        app:layout_constraintTop_toTopOf="@id/segundoSubtraido"
+        app:layout_constraintBottom_toBottomOf="@id/segundoSubtraido"
+        />
+
+    <EditText
+        android:id="@+id/segundoSubtraido"
+        android:layout_width="127dp"
+        android:layout_height="60dp"
+        android:background="#4535"
+        android:hint="n2"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:layout_constraintStart_toEndOf="@id/primeiroSubtraido"
+        app:layout_constraintEnd_toEndOf="@id/btSubtrair"
+        app:layout_constraintTop_toTopOf="@id/primeiroSubtraido" />
+
+    <Button
+        android:id="@+id/btSubtrair"
+        android:backgroundTint="#FF5722"
+        android:text="="
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintStart_toEndOf="@id/segundoSubtraido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/primeiroSubtraido"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
