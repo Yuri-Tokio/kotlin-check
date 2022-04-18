@@ -6,10 +6,10 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/labelAdicao"
+        android:id="@+id/labelSub"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Adição"
+        android:text="Subtração"
         android:textSize="30sp"
         android:textColor="@color/black"
         android:gravity="center"
@@ -31,16 +31,16 @@
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/labelAdicao" />
+        app:layout_constraintTop_toBottomOf="@+id/labelSub" />
 
     <TextView
-        android:id="@+id/tvAdicao"
+        android:id="@+id/tvSub"
         android:layout_width="35dp"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="+"
-        android:textSize="35sp"
+        android:text="_"
+        android:textSize="30sp"
         android:textColor="@color/black"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/etN1"
@@ -60,7 +60,7 @@
         android:hint="n2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAdicao" />
+        app:layout_constraintTop_toBottomOf="@+id/tvSub" />
 
     <Button
         android:id="@+id/btIgual"

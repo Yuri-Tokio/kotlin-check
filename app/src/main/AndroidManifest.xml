@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinCheckpoint">
         <activity
-            android:name=".tela2"
-            android:exported="false" />
+            android:name=".SomaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SubtracaoActivity"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
