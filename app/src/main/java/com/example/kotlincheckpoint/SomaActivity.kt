@@ -1,5 +1,7 @@
 package com.example.kotlincheckpoint
 
+
+import android.widget.TextView
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.provider.ContactsContract
@@ -13,7 +15,14 @@ class SomaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_soma)
 
+        val etN1: TextView = findViewById(R.id.etN1)
+        val etN2: TextView = findViewById(R.id.etN2)
+        val btIgual: TextView = findViewById(R.id.btIgual)
+        val tvResultado: TextView = findViewById(R.id.tvResultado)
 
+        btIgual.setOnClickListener {
+            tvResultado.text = "${etN1.text.toString()} + ${etN2.text.toString()} = "+(etN1.text.toString().toDouble()+etN2.text.toString().toDouble()).toString()
+        }
 
         val rvListaSomas:RecyclerView = findViewById(R.id.rvListaSomas)
         rvListaSomas.layoutManager = LinearLayoutManager(this)
