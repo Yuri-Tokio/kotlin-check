@@ -13,7 +13,7 @@
         android:textSize="30sp"
         android:textColor="@color/black"
         android:gravity="center"
-        android:background="#FF5722"
+        android:background="#123DFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -67,7 +67,7 @@
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="#FF5722"
+        android:backgroundTint="#123DFF"
         android:text="="
         android:textColor="@color/black"
         android:textSize="30sp"
