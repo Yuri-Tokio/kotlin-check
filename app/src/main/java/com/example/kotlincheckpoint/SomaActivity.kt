@@ -15,10 +15,10 @@ class SomaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_soma)
 
-        val etN1: TextView = findViewById(R.id.etN1)
-        val etN2: TextView = findViewById(R.id.etN2)
-        val btIgual: TextView = findViewById(R.id.btIgual)
-        val tvResultado: TextView = findViewById(R.id.tvResultado)
+        val etN1: TextView = findViewById(R.id.etN1Som)
+        val etN2: TextView = findViewById(R.id.etN2Som)
+        val btIgual: TextView = findViewById(R.id.btIgualSom)
+        val tvResultado: TextView = findViewById(R.id.tvResultadoSom)
 
         btIgual.setOnClickListener {
             tvResultado.text = "${etN1.text.toString()} + ${etN2.text.toString()} = "+(etN1.text.toString().toDouble()+etN2.text.toString().toDouble()).toString()
@@ -26,10 +26,10 @@ class SomaActivity : AppCompatActivity() {
 
         val rvListaSomas:RecyclerView = findViewById(R.id.rvListaSomas)
         rvListaSomas.layoutManager = LinearLayoutManager(this)
-        rvListaSomas.adapter = ItemAdapter(Database.listaContas)
+        rvListaSomas.adapter = ItemAdapter(DatabaseSomas.listaSomas)
     }
 
     fun registrarConta(valor1:String, valor2:String, resultado:String){
-        Database.listaContas.add(Operacao(valor1 = valor1.toDouble(), valor2 = valor2.toDouble(), resultado = resultado.toDouble()))
+        DatabaseSomas.listaSomas.add(Operacao(valor1 = valor1.toDouble(), valor2 = valor2.toDouble(), resultado = resultado.toDouble()))
     }
 }

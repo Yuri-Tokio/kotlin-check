@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etN1"
+        android:id="@+id/etN1Som"
         android:ems="10"
         android:inputType="numberDecimal"
         android:layout_width="250dp"
@@ -43,12 +43,12 @@
         android:textSize="35sp"
         android:textColor="@color/black"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/etN1"
+        app:layout_constraintTop_toBottomOf="@+id/etN1Som"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <EditText
-        android:id="@+id/etN2"
+        android:id="@+id/etN2Som"
         android:ems="10"
         android:inputType="numberDecimal"
         android:layout_width="250dp"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvAdicao" />
 
     <Button
-        android:id="@+id/btIgual"
+        android:id="@+id/btIgualSom"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
@@ -74,10 +74,10 @@
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etN2" />
+        app:layout_constraintTop_toBottomOf="@id/etN2Som" />
 
     <TextView
-        android:id="@+id/tvResultado"
+        android:id="@+id/tvResultadoSom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
@@ -87,7 +87,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btIgual" />
+        app:layout_constraintTop_toBottomOf="@+id/btIgualSom" />
 
     tools:context=".SomaActivity">
 
