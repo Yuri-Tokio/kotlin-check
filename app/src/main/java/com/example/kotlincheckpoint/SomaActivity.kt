@@ -23,7 +23,9 @@ class SomaActivity : AppCompatActivity() {
 
         btIgual.setOnClickListener {
             tvResultado.text = "${etN1.text.toString()} + ${etN2.text.toString()} = "+(etN1.text.toString().toDouble()+etN2.text.toString().toDouble()).toString()
+            registrarConta(etN1.text.toString(),etN2.text.toString(),tvResultado.text.toString())
         }
+
 
         val rvListaSomas:RecyclerView = findViewById(R.id.rvListaSomas)
         rvListaSomas.layoutManager = LinearLayoutManager(this)
@@ -31,6 +33,6 @@ class SomaActivity : AppCompatActivity() {
     }
 
     fun registrarConta(valor1:String, valor2:String, resultado:String){
-        DatabaseSomas.listaSomas.add(Operacao(valor1 = valor1.toDouble(), valor2 = valor2.toDouble(), resultado = resultado.toDouble()))
+        DatabaseSomas.listaSomas.add(Operacao(valor1 = valor1, valor2 = valor2, resultado = resultado))
     }
 }

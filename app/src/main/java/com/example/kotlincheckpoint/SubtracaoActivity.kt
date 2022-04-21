@@ -28,6 +28,6 @@ class SubtracaoActivity : AppCompatActivity() {
     }
 
     fun registrarSubtracao(valor1:String, valor2:String, resultado:String){
-        DatabaseSubtracoes.listaSubtracoes.add(Operacao(valor1 = valor1.toDouble(), valor2 = valor2.toDouble(), resultado = resultado.toDouble()))
+        DatabaseSubtracoes.listaSubtracoes.add(Operacao(valor1 = valor1, valor2 = valor2, resultado = resultado))
     }
 }
