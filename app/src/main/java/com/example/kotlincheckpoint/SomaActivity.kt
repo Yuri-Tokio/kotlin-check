@@ -1,5 +1,6 @@
 package com.example.kotlincheckpoint
 
+
 import android.widget.TextView
 import android.os.Bundle
 import android.os.PersistableBundle
@@ -8,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlincheckpoint.adapter.ItemAdapter
+
+
 class SomaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

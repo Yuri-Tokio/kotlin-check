@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Kotlin Checkpoint</string>
+    <string name="adicao">Adição</string>
+    <string name="n1">n1</string>
 </resources>
